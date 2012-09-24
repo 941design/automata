@@ -6,13 +6,13 @@
 
 (def virtual-start-state "VS")
 
-(def personal-comment "// Created with ..
+(def personal-comment "// Created with *don't have a name for this, yet*
 // 
 // author: Markus Rother
 // contact: informatik@markusrother.de
 // created: 09/2012
-// download: ..
-// license: ..
+// url: https://github.com/941design/automata.git
+// license: MIT
 //
 // Do not hesitate to question or comment.
 ")

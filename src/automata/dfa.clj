@@ -130,7 +130,7 @@
 
 
 ;;------------------------
-
+;; :TODO - move to test!
 (def dfa {:name "foo"
           :alphabet #{0 1}
           :start-state :s1
@@ -138,5 +138,5 @@
           :accepting-states #{:s1}
           :transitions #{'(:s1 [0] :s2)
                          '(:s1 [1] :s2)
-                         ;;'(:s2 [2] :s3) ;;foo
+                         '(:s2 [0 1] :s1)
                          }})

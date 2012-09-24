@@ -1,13 +1,42 @@
 # automaton
 
-FIXME: write description
+Creates deterministic finite automata from description.
+The resulting dfa 
+1. can be tested on the command line
+2. can be turned into a .dot (graphviz) file
 
 ## Usage
 
-FIXME: write
+$ java -jar dfa-conv.jar [optional flags]
+
+### Create a dot file
+
+1. Create an automaton file:
+    example.clj
+
+2. Start the converter with the -dot flag:
+    $ java -jar dfa-conv.jar -a example.jar -d example.dot
+
+3. Create the dot file (assuming you have graphviz installed):
+    $ dot -Tpng -o example.png example.dot
+
+4. Watch and enjoy
+
+### Test your automaton
+
+1. As above
+
+2. Start the converter with the -interactive flag:
+    $ java -jar dfa-conv.jar -a example.jar -i
+
+3. Hack the command line
+
+4. Your sequence must start with parantheses or brackets
+
+5. Exit with "exit"
 
 ## License
 
-Copyright (C) 2012 FIXME
+Copyright (C) 2012 Markus Rother
 
 Distributed under the Eclipse Public License, the same as Clojure.
