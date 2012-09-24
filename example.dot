@@ -1,0 +1,35 @@
+
+// Created with ..
+// 
+// author: Markus Rother
+// contact: informatik@markusrother.de
+// created: 09/2012
+// download: ..
+// license: ..
+//
+// Do not hesitate to question or comment.
+
+digraph XOR {
+
+	rankdir = LR;
+
+	node [style = invis]; // invisible virtual start state
+		VS;
+
+	node [shape = doublecircle style = solid]; // accepting state layout
+		s2; 
+
+	node [shape = circle style = solid]; // default state layout
+
+	edge [arrowtail = none arrowhead = open dir = forward];
+
+
+	VS -> s1; // invisible edge to 'real' start state
+
+		s1 -> s1 [label = "0"];
+		s1 -> s2 [label = "1"];
+		s2 -> s2 [label = "0"];
+		s2 -> s3 [label = "1"];
+		s3 -> s3 [label = "0,1"];
+
+}
